@@ -40,10 +40,10 @@ nav.top-nav li:active {
 
 nav.top-nav .pulldown-menu li{
   font-family: 'EB Garamond', serif;
-  color: black;
+  color: red;
   display: block;
   margin-left: 0px;
-  padding-top: 5px;
+  padding-top: 2px;
   font-weight: 200;
   font-size: 1.2em;
 }
