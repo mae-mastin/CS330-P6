@@ -15,6 +15,7 @@ nav.top-nav ul{
   list-style: none;
   padding: 0;
   margin-left: 70%;
+  cursor: pointer;
 }
 
 nav.top-nav li {
