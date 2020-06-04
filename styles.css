@@ -5,6 +5,7 @@
 /*line up name and list items in nav?*/
 /*organize code*/
 /*overline on hover for nav links*/
+/*note which page you are on with overline*/
 
 /*navigation menu header*/
 
@@ -14,6 +15,7 @@
   font-size: 3em;
   margin: 0px;
   margin-top: .5em;
+  color: #1f1f1f;
 }
 
 h1 {
@@ -23,7 +25,11 @@ h1 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #1f1f1f;
+}
+
+p {
+  color: #1f1f1f;
 }
 
 nav.top-nav {
@@ -37,6 +43,7 @@ nav.top-nav {
 
 nav.top-nav ul{
   font-family: 'Open Sans', sans-serif;
+  color: #1f1f1f;
   list-style: none;
   padding: 0;
   cursor: pointer;
@@ -46,7 +53,7 @@ nav.top-nav ul{
 
 nav.top-nav li {
   font-family: 'Open Sans', sans-serif;
-  color: black;
+  color: #1f1f1f;
   margin: 2px;
   margin-left: 1.5em;
   margin-right: 1.5em;
@@ -54,6 +61,7 @@ nav.top-nav li {
   padding: 2px;
   cursor: pointer;
   position: relative;
+  font-size: 18px;
 }
 
 nav.top-nav li:hover {
@@ -66,13 +74,14 @@ nav.top-nav li:active {
 
 nav.top-nav .pulldown-menu li{
   font-family: 'Open Sans', sans-serif;
-  color: black;
+  color: #1f1f1f;
   display: block;
   margin: 2px;
   margin-top: 10px;
   padding-top: 2px;
   font-weight: 200;
   text-align: left;
+  font-size: 17px;
 }
 
 .top-nav .pulldown-menu {
@@ -80,17 +89,13 @@ nav.top-nav .pulldown-menu li{
   display: none;
   position: absolute;
   background-color: white;
-  top: 24px;
+  top: 25px;
   left: 5px;
-  width: 170px;
+  width: 125px;
 }
 
 nav.top-nav li:hover .pulldown-menu {
   display: block
-}
-
-a:visited {
-  color: black;
 }
 
 /*main content*/
@@ -101,36 +106,52 @@ main {
 }
 
 .bio-container {
-  margin-top: 10em;
+  margin-top: 11em;
   display: grid;
-  grid-template-columns: 20% 30%;
+  grid-template-columns: 25% 25%;
   grid-gap: 1em;
   align-items: center;
   justify-content: center;
-  text-align: right;
   margin-bottom: 2em;
 }
 
 .bio-img img {
   max-width: 100%;
+  border-radius: 50%;
 }
 
 .bio-container h1 {
   font-family: 'Sacramento', cursive;
+  color: #1f1f1f;
+  text-align: right;
+  margin: 1px;
+}
+
+.bio-container p {
+  padding-right: 1em;
 }
 
 .bio-description {
   font-family: 'Open Sans', sans-serif;
+  text-align: right;
+  margin: 1px;
+  max-height: 100%;
 }
 
 .project-container {
   font-family: 'Sacramento', cursive;
+  color: #1f1f1f;
   width: 100%;
 	display: grid;
-  grid-template-columns: 50% 30%;
+  grid-template-columns: 30% 50%;
   grid-gap: 1em;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
+  text-align: left;
+}
+
+.project-container h1 {
+  margin: 2px;
 }
 
 .project-img img {
@@ -145,7 +166,7 @@ main {
 .resume-container {
   width: 100%;
 	display: grid;
-  grid-template-columns: 16% 16% 16% 16% 16%;
+  grid-template-columns: 15% 15% 15% 15% 15%;
   grid-gap: 1em;
   align-items: center;
   justify-content: center;
@@ -153,8 +174,13 @@ main {
 }
 
 .resume-icon {
-  margin-top: 1em;
 }
+
+.material-icons.md-48 {
+  font-size: 48px;
+  color: #1f1f1f;
+}
+
 
 .resume-description {
   font-family: 'Open Sans', sans-serif;
@@ -166,6 +192,7 @@ main {
   font-size: 2em;
   vertical-align: middle;
   text-align: right;
+  margin: 1px;
 }
 
 .see-all h1 {
@@ -177,11 +204,13 @@ main {
 
 .see-all {
   font-family: 'Sacramento', cursive;
+  color: #1f1f1f;
   width: 83%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: right;
+  margin-top: 1em;
 }
 
 .bio-description .see-all {
@@ -190,16 +219,17 @@ main {
 
 .heading{
   font-family: 'Sacramento', cursive;
-  margin-top: 6em;
+  margin-top: 3em;
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   width: 82%;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   border-radius: 5px;
+  font-size: 1.3em;
 }
 
 .heading h1 {
@@ -230,19 +260,42 @@ section.resume-container .see-all {
 .contact-container {
   width: 100%;
   display: grid;
-  grid-template-columns: 16% 64%;
+  grid-template-columns: 20% 30% 5% 30%;
   grid-gap: 1em;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-bottom: 2em;
+}
+
+#CONTACT-HEADING {
+  width: 80%;
+  margin-top: 6.5em;
+  line-height: 0px;
+  background-color: white;
+  color: #1f1f1f;
+  font-size: 2em;
+}
+
+#CONTACT {
+  grid-template-columns: 5% 45%;
+  grid-gap: 2em;
+}
+
+.contact-background {
+  background-color: white;
+  color: #1f1f1f;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-description {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
-  background-color: gray;
 }
 
 .contact-icon {
-  background-color: gray;
+  text-align: right;
 }
