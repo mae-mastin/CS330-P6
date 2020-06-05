@@ -177,7 +177,7 @@ main {
 .resume-container {
   width: 100%;
 	display: grid;
-  grid-template-columns: 15% 15% 15% 15% 15%;
+  grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 1em;
   align-items: center;
   justify-content: center;
@@ -359,4 +359,36 @@ section.resume-container .see-all {
 
 .about-description {
   margin-bottom: 2em;
+}
+
+.resume-container-full {
+  margin-top: 10em;
+  width: 100%;
+	display: grid;
+  grid-template-columns: 10% 80%;
+  grid-gap: 1em;
+  grid-row-gap: 3em;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.resume-container-full h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 2em;
+  text-align: left;
+  margin: 0px;
+}
+
+.resume-container-full p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  margin: 0px;
+}
+
+.resume-container-full .resume-icon {
+  text-align: right;
+  margin-right: 1em;
+  margin-top: 2px;
 }
