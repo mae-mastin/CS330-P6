@@ -126,6 +126,10 @@ main {
   border-radius: 50%;
 }
 
+.bio-img a:hover {
+  opacity: 60%;
+}
+
 .bio-container h1 {
   font-family: 'Sacramento', cursive;
   color: #1f1f1f;
