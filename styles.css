@@ -36,6 +36,7 @@ p {
 
 nav.top-nav {
   background-color: white;
+  z-index: 999;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -180,9 +181,10 @@ main {
 	display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 1em;
-  align-items: center;
   justify-content: center;
   text-align: center;
+  align-items: flex-start;
+  margin: 0px;
 }
 
 .resume-icon {
@@ -231,6 +233,10 @@ main {
   margin-right: auto;
   text-align: right;
   margin-top: 1em;
+}
+
+#PROJ-SEE-ALL {
+  margin-top: 0em;
 }
 
 .project-description .see-all {
@@ -374,11 +380,10 @@ section.resume-container .see-all {
   margin-top: 10em;
   width: 100%;
 	display: grid;
-  grid-template-columns: 10% 80%;
+  grid-template-columns: 20% 50%;
   grid-gap: 1em;
   grid-row-gap: 3em;
   align-items: flex-start;
-  justify-content: center;
   text-align: left;
 }
 
@@ -404,4 +409,16 @@ section.resume-container .see-all {
 
 .project-img a:hover {
   opacity: 50%;
+}
+
+.resume-icon a:hover {
+  opacity: 30%;
+}
+
+.space {
+  margin-bottom: 11em;
+}
+
+#LINK {
+  color: gray;
 }
