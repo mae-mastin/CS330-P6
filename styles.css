@@ -171,6 +171,10 @@ main {
   margin: 2px;
 }
 
+.project-container a:hover{
+  color: darkgray;
+}
+
 .project-img img {
 	width: 100%;
 }
@@ -424,5 +428,5 @@ section.resume-container .see-all {
 }
 
 #LINK {
-  color: gray;
+  color: darkgray;
 }
